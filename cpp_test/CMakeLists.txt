@@ -7,6 +7,12 @@ project(
     LANGUAGES CXX
 )
 
+add_library(
+    ${PROJECT_NAME}
+    STATIC
+    src/stop_watch.cc
+)
+
 add_executable(
     test_all
     EXCLUDE_FROM_ALL
